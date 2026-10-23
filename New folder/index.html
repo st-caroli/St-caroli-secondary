@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St. Caroli Secondary School | Sengerema</title>
+    <!-- Tailwind CSS CDN kwa ajili ya muundo wa kisasa kabisa -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome kwa ajili ya Icons za kisasa -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .bg-school-green { background-color: #1b4332; }
+        .text-school-green { color: #1b4332; }
+        .border-school-green { border-color: #1b4332; }
+        .bg-school-gold { background-color: #d4af37; }
+        .text-school-gold { color: #d4af37; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <!-- NAVBAR (Sehemu ya Juu) -->
+    <nav class="bg-school-green text-white sticky top-0 z-50 shadow-md backdrop-blur-md bg-opacity-95">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center gap-3">
+                    <!-- SVG ya Logo ya Shule (Msalaba, Kitabu na Ufunguo) -->
+					<img src="logo.png" img size="80px" height="Auto">
+                    <div class="bg-white p-2 rounded-full shadow-inner flex items-center justify-center w-12 h-12">
+                        <svg viewBox="0 0 100 100" class="w-10 h-10">
+                            <circle cx="50" cy="50" r="48" fill="none" stroke="#d4af37" stroke-width="4"/>
+                            <path d="M50 15 V75 M30 35 H70" stroke="#dc2626" stroke-width="6" stroke-linecap="round"/>
+                            <path d="M55 45 H75 V52 H70 V57 H65 V52 H55 Z" fill="#d4af37" stroke="#b5942b" stroke-width="1"/>
+                            <path d="M35 68 Q50 60 65 68 Q50 72 35 68 Z" fill="#fff" stroke="#1b4332" stroke-width="2"/>
+                            <path d="M35 68 L35 70 Q50 74 65 70 L65 68" fill="none" stroke="#1b4332" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="font-extrabold text-xl tracking-wider block">ST. CAROLI</span>
+                        <span class="text-xs text-school-gold font-semibold uppercase tracking-widest block">Secondary School</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8 font-medium">
+                    <a href="#home" class="hover:text-school-gold transition">Nyumbani</a>
+                    <a href="#about" class="hover:text-school-gold transition">Kuhusu Shule</a>
+                    <a href="#subjects" class="hover:text-school-gold transition">Masomo</a>
+                    <a href="#admission" class="bg-school-gold text-school-green px-5 py-2.5 rounded-full font-bold shadow hover:bg-yellow-500 transition transform hover:scale-105">Sajili Mwanafunzi</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="relative bg-school-green text-white py-32 px-4 overflow-hidden min-h-[85vh] flex items-center">
+        <!-- Picha ya mazingira nyuma yenye giza kwa uzuri wa maandishi -->
+        <div class="absolute inset-0 opacity-20 bg-cover bg-center mix-blend-overlay" src="caroli"img size="80"></div>
+        <div class="absolute -top-40 -right-40 w-96 h-96 bg-school-gold rounded-full blur-3xl opacity-20"></div>
+        <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-green-400 rounded-full blur-3xl opacity-10"></div>
+        
+        <div class="max-w-5xl mx-auto text-center relative z-10 space-y-6">
+            <span class="bg-white/10 text-school-gold font-bold px-4 py-1.5 rounded-full text-sm uppercase tracking-widest inline-block border border-white/20">Sengerema, Mwanza</span>
+            <h1 class="text-4xl sm:text-6xl font-black tracking-tight leading-tight">
+                Kulea Maadili na <span class="text-school-gold">Kuinua Taaluma</span> kwa Kizazi cha Kesho
+            </h1>
+            <p class="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto font-light leading-relaxed">
+                Shule mchanganyiko (Wavulana na Wasichana) ya Kutwa na Bweni yenye mazingira tulivu, walimu waliobobea, na miundombinu ya kisasa ya kujifunzia.
+            </p>
+            <div class="pt-6 flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#admission" class="bg-school-gold text-school-green font-extrabold px-8 py-4 rounded-xl shadow-lg hover:bg-yellow-500 transition transform hover:-translate-y-1 text-center">
+                    Tuma Maombi ya Nafasi ya Masomo
+                </a>
+                <a href="#about" class="border-2 border-white/30 bg-white/5 hover:bg-white/10 font-bold px-8 py-4 rounded-xl transition text-center">
+                    Soma Kuhusu Sisi
+                </a>
+            </div>
+            
+            <!-- MOTTO BAR -->
+            <div class="pt-12">
+                <div class="inline-flex flex-col sm:flex-row items-center gap-3 bg-white/5 border border-white/10 rounded-2xl px-6 py-4 max-w-md mx-auto shadow-inner">
+                    <span class="text-xs uppercase tracking-widest text-gray-400 font-bold">Motto Wetu:</span>
+                    <span class="text-xl font-black text-school-gold tracking-wide">"EDUCATION IS OUR FUTURE"</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATISTICS / HIGHLIGHTS -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16 relative z-20">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white p-8 rounded-2xl shadow-xl border border-gray-100 flex items-start gap-4 transform hover:-translate-y-1 transition duration-300">
+                <div class="bg-green-100 p-4 rounded-xl text-school-green text-2xl"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div>
+                    <h3 class="font-bold text-xl mb-1">Mchanganyiko & Bweni</h3>
+                    <p class="text-gray-500 text-sm">Tunapokea wasichana na wavulana kwa mifumo ya kutwa na hosteli salama kabisa.</p>
+                </div>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-xl border border-gray-100 flex items-start gap-4 transform hover:-translate-y-1 transition duration-300">
+                <div class="bg-yellow-100 p-4 rounded-xl text-yellow-600 text-2xl"><i class="fa-solid fa-chalkboard-user"></i></div>
+                <div>
+                    <h3 class="font-bold text-xl mb-1">Walimu Waliobobea</h3>
+                    <p class="text-gray-500 text-sm">Walimu wetu wana uzoefu mkubwa na wamebobea katika ufundishaji wa masomo yote.</p>
+                </div>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-xl border border-gray-100 flex items-start gap-4 transform hover:-translate-y-1 transition duration-300">
+                <div class="bg-blue-100 p-4 rounded-xl text-blue-600 text-2xl"><i class="fa-solid fa-laptop-code"></i></div>
+                <div>
+                    <h3 class="font-bold text-xl mb-1">Mazingira Bora</h3>
+                    <p class="text-gray-500 text-sm">Mazingira mazuri ya kijani kibichi yenye maktaba na maabara ya kisasa ya kompyuta.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <span class="text-school-green font-bold text-sm uppercase tracking-widest block">Kuhusu St. Caroli</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-gray-900 tracking-tight">
+                    Shule Inayoongoza kwa Ustawi wa Mwanafunzi Kiakademia na Kimaadili
+                </h2>
+                <p class="text-gray-600 leading-relaxed">
+                    St. Caroli Secondary School ni shule ya sekondari ya mchanganyiko inayopatikana katikati ya <strong>Wilaya ya Sengerema mjini, Mkoa wa Mwanza</strong>. Lengo letu kuu ni kutoa elimu bora inayomwandaa mwanafunzi kukabili changamoto za maisha kupitia misingi thabiti ya maarifa na maadili mema ya Kitanzania.
+                </p>
+                <div class="grid grid-cols-2 gap-4 pt-2">
+                    <div class="flex items-center gap-2 text-gray-700 font-medium">
+                        <i class="fa-solid fa-circle-check text-school-green"></i> Miundombinu ya Kompyuta
+                    </div>
+                    <div class="flex items-center gap-2 text-gray-700 font-medium">
+                        <i class="fa-solid fa-circle-check text-school-green"></i> Hosteli za Kisasa
+                    </div>
+                    <div class="flex items-center gap-2 text-gray-700 font-medium">
+                        <i class="fa-solid fa-circle-check text-school-green"></i> Michezo na Burudani
+                    </div>
+                    <div class="flex items-center gap-2 text-gray-700 font-medium">
+                        <i class="fa-solid fa-circle-check text-school-green"></i> Chakula Bora na Salama
+                    </div>
+                </div>
+            </div>
+            <!-- Sehemu ya Picha yenye muonekano wa Collage ya Kisasa -->
+            <div class="relative grid grid-cols-2 gap-4">
+                <div class="space-y-4">
+                    <img class="w-full h-48 object-cover rounded-2xl shadow-md border-4 border-white" src="computer.jpg" img size="80">
+                    <img class="w-full h-64 object-cover rounded-2xl shadow-md border-4 border-white" src="formone.jpg" img size="80">
+                </div>
+                <div class="space-y-4 pt-8">
+                    <img class="w-full h-64 object-cover rounded-2xl shadow-md border-4 border-white" src="formthree.jpg"img size="80">
+                    <img class="w-full h-48 object-cover rounded-2xl shadow-md border-4 border-white" src="oscar.jpg" img size="90">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SUBJECTS SECTION -->
+    <section id="subjects" class="bg-gray-100 py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4 mb-16">
+            <span class="text-school-green font-bold text-sm uppercase tracking-widest block">Mtaala Wetu</span>
+            <h2 class="text-3xl sm:text-4xl font-black text-gray-900 tracking-tight">Masomo Yanayofundishwa Shuleni kwetu</h2>
+            <p class="text-gray-500 max-w-xl mx-auto text-sm">Tunafundisha mtaala kamili wa kitaifa ulioboreshwa ili kumjengea mwanafunzi uwezo wa kipekee wa ushindani ulimwenguni.</p>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Sayansi -->
+            <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 space-y-4">
+                <div class="bg-red-50 text-red-600 w-12 h-12 rounded-xl flex items-center justify-center text-xl font-bold"><i class="fa-solid fa-flask"></i></div>
+                <h3 class="font-bold text-lg text-gray-900">Sayansi (Sciences)</h3>
+                <ul class="space-y-2 text-gray-600 text-sm">
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-red-500"></span> Physics</li>
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-red-500"></span> Chemistry</li>
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-red-500"></span> Biology</li>
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-red-500"></span> Mathematics</li>
+                </ul>
+            </div>
+            <!-- Sanaa -->
+            <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 space-y-4">
+                <div class="bg-blue-50 text-blue-600 w-12 h-12 rounded-xl flex items-center justify-center text-xl font-bold"><i class="fa-solid fa-book-open"></i></div>
+                <h3 class="font-bold text-lg text-gray-900">Sanaa (Arts & Languages)</h3>
+                <ul class="space-y-2 text-gray-600 text-sm">
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span> English Language</li>
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span> Literature in English</li>
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span> Geography</li>
+                </ul>
+            </div>
+            <!-- Jamii na Maadili -->
+            <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 space-y-4">
+                <div class="bg-amber-50 text-amber-600 w-12 h-12 rounded-xl flex items-center justify-center text-xl font-bold"><i class="fa-solid fa-landmark"></i></div>
+                <h3 class="font-bold text-lg text-gray-900">Jamii na Maadili</h3>
+                <ul class="space-y-2 text-gray-600 text-sm">
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span> History ya Tanzania na MAADILI</li>
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span> Bible Knowledge</li>
+                </ul>
+            </div>
+            <!-- Teknolojia na Biashara -->
+            <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 space-y-4">
+                <div class="bg-purple-50 text-purple-600 w-12 h-12 rounded-xl flex items-center justify-center text-xl font-bold"><i class="fa-solid fa-chart-line"></i></div>
+                <h3 class="font-bold text-lg text-gray-900">Teknolojia & Biashara</h3>
+                <ul class="space-y-2 text-gray-600 text-sm">
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-purple-500"></span> Computer Studies / Science</li>
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-purple-500"></span> Business Studies</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ADMISSION / REGISTRATION FORM -->
+    <section id="admission" class="py-24 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white rounded-3xl shadow-2xl border border-gray-100 overflow-hidden">
+            <div class="bg-school-green text-white p-8 sm:p-12 text-center space-y-3 relative overflow-hidden">
+                <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-school-gold rounded-full opacity-10"></div>
+                <h2 class="text-3xl font-black tracking-tight">Fomu ya Maombi ya Kujiunga na Shule</h2>
+                <p class="text-gray-300 max-w-xl mx-auto text-sm">Jaza fomu hii ya bure kabisa kuwasilisha maombi yako. Uongozi utakujibu haraka iwezekanavyo.</p>
+            </div>
+
+           
+
+            <!-- FOMU HALISI -->
+            <form action="https://formspree.io/f/xbggrkgr" method="POST" class="p-8 sm:p-12 space-y-6">
+                <!-- Data ya siri kwa ajili ya kurudisha jibu sahihi -->
+                <input type="hidden" name="_replyto" value="emmasonoscar32@gmail.com">
+                <input type="hidden" name="_subject" value="MAOMBI YA KUJIUNGA - St. Caroli Website">
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-2">Jina Kamili la Mwanafunzi *</label>
+                        <input type="text" name="Jina la Mwanafunzi" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-green-700 focus:border-green-700 outline-none transition" placeholder="Mf. Juma Hamisi">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-2">Jinsia ya Mwanafunzi *</label>
+                        <select name="Jinsia" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-green-700 focus:border-green-700 outline-none transition bg-white">
+                            <option value="">Chagua Jinsia</option>
+                            <option value="Wavulana">Mvulana</option>
+                            <option value="Wasichana">Msichana</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-2">Mfumo Unaoomba *</label>
+                        <select name="Mfumo wa Shule" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-green-700 focus:border-green-700 outline-none transition bg-white">
+                            <option value="">Chagua Mfumo</option>
+                            <option value="Kutwa">Kutwa (Day)</option>
+                            <option value="Bweni">Bweni (HOSTELI)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-2">Kidato Unachoomba *</label>
+                        <select name="Kidato" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-green-700 focus:border-green-700 outline-none transition bg-white">
+                            <option value="Kidato cha Kwanza">Kidato cha Kwanza (Form 1)</option>
+                            <option value="Kidato cha Pili">Kidato cha Pili (Form 2)</option>
+                            <option value="Kidato cha Tatu">Kidato cha Tatu (Form 3)</option>
+                            <option value="Kidato cha Nne">Kidato cha Nne (Form 4)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="border-t border-gray-100 pt-6">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Taarifa za Mzazi / Mlezi</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">Jina la Mzazi/Mlezi *</label>
+                            <input type="text" name="Jina la Mzazi" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-green-700 focus:border-green-700 outline-none transition" placeholder="Baba">
+                            <input type="text" name="Jina la Mzazi" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-green-700 focus:border-green-700 outline-none transition" placeholder="Mama">
+                        
+						</div>
+                       
+                       
+						<div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">Namba ya Simu ya Mzazi *</label>
+                            <input type="tel" name="Simu ya Mzazi" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-green-700 focus:border-green-700 outline-none transition" placeholder="Mf. 0742XXXXXX">
+                            <input type="tel" name="Simu ya Mzazi" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-green-700 focus:border-green-700 outline-none transition" placeholder="Mf. 0623XXXXXX">
+                        
+						</div>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-bold text-gray-700 mb-2">Maelezo ya Ziada (Ukurasa wa Shule iliyotoka, n.k.)</label>
+                    <textarea name="Maelezo ya Ziada" rows="4" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-green-700 focus:border-green-700 outline-none transition" placeholder="Andika maelezo yoyote hapa ya nyongeza..."></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-school-green hover:bg-green-900 text-white font-black py-4 rounded-xl shadow-xl transition transform hover:scale-[1.01] flex items-center justify-center gap-2 text-lg">
+                    <i class="fa-solid fa-paper-plane"></i> Tuma Maombi Sasa
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER / SEHEMU YA MAWASILIANO -->
+    <footer class="bg-gray-900 text-gray-400 py-16 border-t-4 border-school-gold">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-12">
+            <!-- Shule Info -->
+            <div class="space-y-4">
+                <div class="flex items-center gap-2 text-white">
+                    <span class="font-black text-2xl tracking-wider text-school-gold">ST. CAROLI</span>
+                </div>
+                <p class="text-sm leading-relaxed">
+                    Tunapatikana Wilaya ya Sengerema mjini, Mkoa wa Mwanza. Shule ya mchanganyiko inayojenga mustakabali thabiti wa elimu na kulea maadili sahihi.
+                </p>
+                <p class="text-xs text-gray-500">Motto: <span class="italic text-school-gold">"Education is our Future"</span></p>
+            </div>
+
+            <!-- Mawasiliano Rasmi -->
+            <div class="space-y-4">
+                <h3 class="text-white font-bold text-lg border-b border-gray-800 pb-2">Mawasiliano</h3>
+                <ul class="space-y-3 text-sm">
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-phone text-school-gold"></i>
+                        <span>0742387713 / 0623979774</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-envelope text-school-gold"></i>
+                        <span>stcaroli@gmail.com</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-location-dot text-school-gold"></i>
+                        <span>Sengerema Mjini, Mwanza, Tanzania</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Viungo vya Haraka -->
+            <div class="space-y-4">
+                <h3 class="text-white font-bold text-lg border-b border-gray-800 pb-2">Viungo vya Haraka</h3>
+                <div class="grid grid-cols-2 gap-2 text-sm">
+                    <a href="#home" class="hover:text-white transition">Nyumbani</a>
+                    <a href="#about" class="hover:text-white transition">Kuhusu Sisi</a>
+                    <a href="#subjects" class="hover:text-white transition">Masomo</a>
+                    <a href="#admission" class="hover:text-white transition">Fomu ya Maombi</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-gray-800 text-center text-xs text-gray-600">
+            &copy; 2026 St. Caroli Secondary School. Haki zote zimehifadhiwa.
+        </div>
+    </footer>
+
+</body>
+</html>
